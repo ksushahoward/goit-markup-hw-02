@@ -36,6 +36,8 @@ span {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  color: #212121;
 }
 
 .header-link:hover,
@@ -92,7 +94,16 @@ span {
 /* --------------------FEATURES-------------------- */
 
 .features-title {
-  display: none;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .features-list-title {
@@ -195,4 +206,55 @@ span {
 .footer-link-adress:hover,
 .footer-link-adress:focus {
   color: var(--accent-color);
+}
+
+/* --------------------PORTFOLIO-------------------- */
+
+.main-portfolio-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.portfolio-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  background-color: #f5f4fa;
+
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-descr {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
 }
