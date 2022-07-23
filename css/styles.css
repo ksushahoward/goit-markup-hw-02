@@ -1,11 +1,19 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
+  background-color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 :root {
   --accent-color: #2196f3;
   --main-text-color: #757575;
+  --dark-bgc: #2f303a;
+  --hero-title-color: #ffffff;
+  --light-bgc: #f5f4fa;
+  --footer-transparent: rgba(255, 255, 255, 0.6);
+  --main-title-color: #212121;
 }
 
 .link {
@@ -15,6 +23,7 @@ body {
 .list {
   list-style: none;
 }
+
 /* --------------------HEADER-------------------- */
 
 .header-logo {
@@ -45,6 +54,10 @@ span {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
+
 .header-email,
 .header-tel {
   font-weight: 500;
@@ -65,7 +78,7 @@ span {
 /* --------------------HERO-------------------- */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--dark-bgc);
 }
 
 .hero-title {
@@ -76,7 +89,7 @@ span {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--hero-title-color);
 }
 
 .hero-btn {
@@ -84,8 +97,9 @@ span {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
 
-  color: #ffffff;
+  color: var(--hero-title-color);
   background-color: var(--accent-color);
 
   cursor: pointer;
@@ -93,7 +107,7 @@ span {
 
 /* --------------------FEATURES-------------------- */
 
-.features-title {
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -108,16 +122,12 @@ span {
 
 .features-list-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .features-text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 
   color: var(--main-text-color);
 }
@@ -129,13 +139,12 @@ span {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* --------------------TEAM-------------------- */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--light-bgc);
 }
 
 .team-main-title {
@@ -143,7 +152,6 @@ span {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-title {
@@ -151,14 +159,12 @@ span {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-descr {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--main-text-color);
 }
@@ -166,7 +172,7 @@ span {
 /* --------------------FOOTER-------------------- */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--dark-bgc);
 }
 .footer-logo {
   font-family: 'Raleway';
@@ -176,7 +182,7 @@ span {
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--hero-title-color);
 }
 
 .footer-link-adress {
@@ -186,7 +192,7 @@ span {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--hero-title-color);
 }
 .footer-email,
 .footer-tel {
@@ -196,7 +202,7 @@ span {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-transparent);
 }
 
 .footer-email:hover,
@@ -210,37 +216,24 @@ span {
 
 /* --------------------PORTFOLIO-------------------- */
 
-.main-portfolio-title {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .portfolio-btn {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--main-title-color);
+  background-color: var(--light-bgc);
 
   cursor: pointer;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #ffffff;
+  color: var(--hero-title-color);
   background-color: var(--accent-color);
 }
 
@@ -254,7 +247,6 @@ span {
 .portfolio-descr {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 
   color: var(--main-text-color);
 }
