@@ -175,7 +175,7 @@ span {
   background-color: var(--dark-bgc);
 }
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -186,7 +186,7 @@ span {
 }
 
 .footer-link-adress {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -196,7 +196,7 @@ span {
 }
 .footer-email,
 .footer-tel {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
